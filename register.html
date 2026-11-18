@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniShare - Register</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section><div class="container">
+  <h1 class="section-title" style="text-align:center">Student <span>Registration</span></h1>
+  <div class="form-box" style="max-width:420px">
+    <label for="regName">Full name</label><input type="text" id="regName">
+    <label for="regUni">University name</label><input type="text" id="regUni">
+    <label for="regDept">Department</label><input type="text" id="regDept">
+    <label for="regEmail">University email</label><input type="text" id="regEmail">
+    <label for="regPass">Password (min 6 characters)</label><input type="password" id="regPass">
+    <div class="btn-row"><button class="btn" onclick="registerUser()">Register</button></div>
+    <p id="regMsg" class="msg"></p>
+    <p class="note">Already registered? <a href="login.html">Login</a></p>
+    <p class="note">This is a frontend demo. Do not use a real password: it is not securely stored.</p>
+  </div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

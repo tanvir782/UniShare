@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniShare - Home</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section class="hero"><div class="container">
+  <h1>Your Campus. Your Community. Your <span class="accent">Marketplace.</span></h1>
+  <p>UniShare helps university students donate, rent and sell unused academic items, so useful things get a second life and everyone saves money.</p>
+  <div class="search-bar"><input type="text" id="heroSearch" placeholder="Search books, calculators, kits..."><button class="btn" onclick="searchFromHome()">Search</button></div>
+  <a class="btn" href="explore.html">Explore Items</a> <a class="btn btn-outline" href="add-item.html">Post an Item</a>
+</div></section>
+
+<section><div class="container">
+  <h2 class="section-title">Browse by <span>Categories</span></h2>
+  <div class="grid" id="categoryGrid"></div>
+</div></section>
+
+<section class="alt"><div class="container">
+  <h2 class="section-title">Donate, Rent or <span>Sell</span></h2>
+  <div class="grid">
+    <div class="service"><h3>Donate</h3><p>Give items to other students for free.</p><a class="btn btn-small" href="explore.html?type=Donate">See Donations</a></div>
+    <div class="service"><h3>Rent</h3><p>Rent out useful items for a limited period.</p><a class="btn btn-small" href="explore.html?type=Rent">See Rentals</a></div>
+    <div class="service"><h3>Sell</h3><p>Sell new or used items to students.</p><a class="btn btn-small" href="explore.html?type=Sell">See Items for Sale</a></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2 class="section-title">Recently Added <span>Items</span></h2>
+  <div class="grid" id="recentGrid"></div>
+</div></section>
+
+<section class="alt"><div class="container">
+  <h2 class="section-title">How UniShare <span>Works</span></h2>
+  <div class="grid">
+    <div class="service"><div class="step-num">1</div><h3>Register</h3><p>Create a free student account.</p></div>
+    <div class="service"><div class="step-num">2</div><h3>Post or Browse</h3><p>List your item or search for what you need.</p></div>
+    <div class="service"><div class="step-num">3</div><h3>Contact and Exchange</h3><p>Message the lister through Teams, phone or email and agree on a safe place.</p></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2 class="section-title">Why Choose <span>UniShare?</span></h2>
+  <div class="grid">
+    <div class="service"><h3>Save Money</h3><p>Get books and equipment for less, or free.</p></div>
+    <div class="service"><h3>Reduce Waste</h3><p>Reusing items keeps them out of the bin.</p></div>
+    <div class="service"><h3>Student Community</h3><p>Help classmates and juniors on your campus.</p></div>
+    <div class="service"><h3>Simple to Use</h3><p>Clean pages that work on phone and desktop.</p></div>
+  </div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script>showHome();</script>
+</body>
+</html>

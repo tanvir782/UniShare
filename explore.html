@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniShare - Explore</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section><div class="container">
+  <h1 class="section-title">Explore <span>Marketplace</span></h1>
+  <div class="filters">
+    <input type="text" id="searchBox" placeholder="Search by item name" oninput="showExplore()">
+    <select id="categoryFilter" onchange="showExplore()"></select>
+    <select id="typeFilter" onchange="showExplore()"><option value="">All Types</option><option>Donate</option><option>Rent</option><option>Sell</option></select>
+    <select id="conditionFilter" onchange="showExplore()"><option value="">Any Condition</option><option>New</option><option>Like New</option><option>Used</option></select>
+    <select id="sortBy" onchange="showExplore()"><option value="newest">Newest first</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select>
+  </div>
+  <p class="muted" id="resultCount"></p><br>
+  <div class="grid" id="exploreGrid"></div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script>setupExplore();</script>
+</body>
+</html>
